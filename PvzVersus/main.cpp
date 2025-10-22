@@ -6,12 +6,24 @@
 #include "GameScene.h"
 #include "SceneManager.h"
 #include "SceneSelector.h"
+#include "Atlas.h"
+#include "util.h"
 
 Scene* game_scene = nullptr;
 Scene* menu_scene = nullptr;
 Scene* scene_selector = nullptr;
 
 SceneManager scene_manager;
+
+void flip_altas(Atlas& src, Atlas& dst) {
+	dst.clear();
+	for (size_t i = 0; i < src.get_size(); i++) {
+		IMAGE img_flipped;
+		flip_image(src.get_image(i), &img_flipped);
+		dst.add_image(img_flipped);
+	}
+
+}
 
 int main(void) {
 	initgraph(1280, 720);

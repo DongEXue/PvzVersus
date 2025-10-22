@@ -34,6 +34,10 @@ public:
 		return &images_list[index];
 	}
 
+	void add_image(const IMAGE& img) {
+		images_list.push_back(img);
+	}
+
 private:
 	std::vector<IMAGE> images_list;
 };
