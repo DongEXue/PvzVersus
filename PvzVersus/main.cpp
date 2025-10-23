@@ -91,9 +91,9 @@ Atlas atlas_run_effect;							//奔跑效果动画图集
 Atlas atlas_jump_effect;						//跳跃效果动画图集
 Atlas atlas_land_effect;						//着陆效果动画图集
 
-IMAGE img_1P_winnner;							//1P胜利图片
-IMAGE img_2P_winnner;							//2P胜利图片
-IMAGE img_winnner_bar;							//胜利横幅图片
+IMAGE img_1P_winner;							//1P胜利图片
+IMAGE img_2P_winner;							//2P胜利图片
+IMAGE img_winner_bar;							//胜利横幅图片
 
 IMAGE img_avatar_peashooter;					//豌豆射手头像图片
 IMAGE img_avatar_sunflower;						//向日葵头像图片
@@ -163,9 +163,9 @@ void load_game_resources() {
 	atlas_jump_effect.load_from_file(_T("resources/jump_effect_%d.png"), 5);
 	atlas_land_effect.load_from_file(_T("resources/land_effect_%d.png"), 2);
 
-	loadimage(&img_1P_winnner, _T("resources/1P_winner.png"));
-	loadimage(&img_2P_winnner, _T("resources/2P_winner.png"));
-	loadimage(&img_winnner_bar, _T("resources/winner_bar.png"));
+	loadimage(&img_1P_winner, _T("resources/1P_winner.png"));
+	loadimage(&img_2P_winner, _T("resources/2P_winner.png"));
+	loadimage(&img_winner_bar, _T("resources/winner_bar.png"));
 
 	loadimage(&img_avatar_peashooter, _T("resources/avatar_peashooter.png"));
 	loadimage(&img_avatar_sunflower, _T("resources/avatar_sunflower.png"));
