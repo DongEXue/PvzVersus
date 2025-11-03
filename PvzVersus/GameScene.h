@@ -19,7 +19,7 @@ public:
 		}
 	}
 
-	void on_update() {
+	void on_update(uint32_t delta) {
 		std::cout << "Update Game Scene" << std::endl;
 	}
 	void on_draw() {
